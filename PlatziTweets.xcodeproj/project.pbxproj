@@ -10,9 +10,9 @@
 		8BFF93FD2C5CA93F0059D12E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF93FC2C5CA93F0059D12E /* AppDelegate.swift */; };
 		8BFF93FF2C5CA93F0059D12E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF93FE2C5CA93F0059D12E /* SceneDelegate.swift */; };
 		8BFF94012C5CA93F0059D12E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94002C5CA93F0059D12E /* ViewController.swift */; };
-		8BFF94042C5CA93F0059D12E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF94032C5CA93F0059D12E /* Base */; };
 		8BFF94062C5CA9410059D12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF94052C5CA9410059D12E /* Assets.xcassets */; };
 		8BFF94092C5CA9410059D12E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF94082C5CA9410059D12E /* Base */; };
+		8BFF94142C5CAEE50059D12E /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF94132C5CAEE50059D12E /* Welcome.storyboard */; };
 		EDDB2C92AEA2878C8C1B1934 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C61A13FAE890D3C78597F1A /* Pods_PlatziTweets.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,10 +21,10 @@
 		8BFF93FC2C5CA93F0059D12E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BFF93FE2C5CA93F0059D12E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8BFF94002C5CA93F0059D12E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8BFF94032C5CA93F0059D12E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BFF94052C5CA9410059D12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BFF94082C5CA9410059D12E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BFF940A2C5CA9410059D12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BFF94132C5CAEE50059D12E /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		97E14E72534AB7B31C5D2147 /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
 		9C61A13FAE890D3C78597F1A /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E724E50A877C3BA13510F21B /* Pods-PlatziTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.release.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,15 +63,39 @@
 		8BFF93FB2C5CA93F0059D12E /* PlatziTweets */ = {
 			isa = PBXGroup;
 			children = (
-				8BFF93FC2C5CA93F0059D12E /* AppDelegate.swift */,
-				8BFF93FE2C5CA93F0059D12E /* SceneDelegate.swift */,
-				8BFF94002C5CA93F0059D12E /* ViewController.swift */,
-				8BFF94022C5CA93F0059D12E /* Main.storyboard */,
-				8BFF94052C5CA9410059D12E /* Assets.xcassets */,
-				8BFF94072C5CA9410059D12E /* LaunchScreen.storyboard */,
+				8BFF94102C5CAE700059D12E /* Modules */,
+				8BFF94112C5CAE790059D12E /* Commons */,
 				8BFF940A2C5CA9410059D12E /* Info.plist */,
 			);
 			path = PlatziTweets;
+			sourceTree = "<group>";
+		};
+		8BFF94102C5CAE700059D12E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8BFF94122C5CAECE0059D12E /* Welcome */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8BFF94112C5CAE790059D12E /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				8BFF93FC2C5CA93F0059D12E /* AppDelegate.swift */,
+				8BFF93FE2C5CA93F0059D12E /* SceneDelegate.swift */,
+				8BFF94002C5CA93F0059D12E /* ViewController.swift */,
+				8BFF94052C5CA9410059D12E /* Assets.xcassets */,
+				8BFF94072C5CA9410059D12E /* LaunchScreen.storyboard */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		8BFF94122C5CAECE0059D12E /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				8BFF94132C5CAEE50059D12E /* Welcome.storyboard */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		B030695BAE67DC04B6B07E23 /* Pods */ = {
@@ -153,7 +177,7 @@
 			files = (
 				8BFF94062C5CA9410059D12E /* Assets.xcassets in Resources */,
 				8BFF94092C5CA9410059D12E /* Base in Resources */,
-				8BFF94042C5CA93F0059D12E /* Base in Resources */,
+				8BFF94142C5CAEE50059D12E /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,14 +239,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8BFF94022C5CA93F0059D12E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BFF94032C5CA93F0059D12E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8BFF94072C5CA9410059D12E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,8 +382,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlatziTweets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -401,8 +417,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlatziTweets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
