@@ -164,11 +164,63 @@
         <scene sceneID="e8U-Jx-2GV">
             <objects>
                 <viewController id="l4e-lk-fa4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="apf-PV-g4Y">
+                    <view key="view" contentMode="scaleToFill" id="jjT-FI-3Yc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="tm9-qZ-OaC"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lo2-IF-EUS">
+                                <rect key="frame" x="20" y="175" width="353" height="187"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hch-Tz-1B6">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre y Apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7XX-kF-7aq">
+                                        <rect key="frame" x="0.0" y="44" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mpk-Ys-kZr">
+                                        <rect key="frame" x="0.0" y="88" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIE-ew-NRO">
+                                        <rect key="frame" x="0.0" y="132" width="353" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="Qj2-jT-oqd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Registro">
+                                            <backgroundConfiguration key="background" cornerRadius="10">
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomImage" translatesAutoresizingMaskIntoConstraints="NO" id="xTY-3z-zWx">
+                                <rect key="frame" x="0.0" y="727" width="393" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="Oux-ze-ngo"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gHZ-OX-DbI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xTY-3z-zWx" firstAttribute="leading" secondItem="gHZ-OX-DbI" secondAttribute="leading" id="2pd-A7-UAZ"/>
+                            <constraint firstItem="xTY-3z-zWx" firstAttribute="trailing" secondItem="gHZ-OX-DbI" secondAttribute="trailing" id="Dgw-El-pAM"/>
+                            <constraint firstAttribute="bottom" secondItem="xTY-3z-zWx" secondAttribute="bottom" id="INO-6a-wE1"/>
+                            <constraint firstItem="gHZ-OX-DbI" firstAttribute="trailing" secondItem="lo2-IF-EUS" secondAttribute="trailing" constant="20" id="NBN-pK-gT8"/>
+                            <constraint firstItem="xTY-3z-zWx" firstAttribute="leading" secondItem="gHZ-OX-DbI" secondAttribute="leading" id="QAh-UA-1EO"/>
+                            <constraint firstItem="lo2-IF-EUS" firstAttribute="leading" secondItem="gHZ-OX-DbI" secondAttribute="leading" constant="20" id="RJA-5a-W4Q"/>
+                            <constraint firstItem="xTY-3z-zWx" firstAttribute="trailing" secondItem="gHZ-OX-DbI" secondAttribute="trailing" id="ZTc-00-iz0"/>
+                            <constraint firstItem="lo2-IF-EUS" firstAttribute="top" secondItem="gHZ-OX-DbI" secondAttribute="top" constant="20" id="mmD-sZ-IwB"/>
+                            <constraint firstAttribute="bottom" secondItem="xTY-3z-zWx" secondAttribute="bottom" id="rp6-is-Mxm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Registro" id="zsY-uC-5dj"/>
                 </viewController>
