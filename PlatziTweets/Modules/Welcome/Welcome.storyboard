@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="WelcomeViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,6 +92,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e90-mP-ptT"/>
+                    <connections>
+                        <outlet property="loginButton" destination="BJH-Y2-QDL" id="mO1-pY-lyf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,7 +103,7 @@
         <!--Iniciar Sesión-->
         <scene sceneID="Ktl-zK-s92">
             <objects>
-                <viewController id="KZe-O0-8c6" sceneMemberID="viewController">
+                <viewController id="KZe-O0-8c6" customClass="LoginViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5QO-0O-gw0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,6 +133,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginButtonAction" destination="KZe-O0-8c6" eventType="touchUpInside" id="uNP-4m-72q"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -155,6 +161,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Iniciar Sesión" id="Shb-GF-tKo"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="pur-1S-UWu" id="Ash-Va-Cfo"/>
+                        <outlet property="loginButton" destination="M8s-KQ-aSd" id="Zep-RS-tuK"/>
+                        <outlet property="passwordTextField" destination="NWR-9X-rlL" id="Tj5-XP-czY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ov5-4Y-Xet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,7 +174,7 @@
         <!--Registro-->
         <scene sceneID="e8U-Jx-2GV">
             <objects>
-                <viewController id="l4e-lk-fa4" sceneMemberID="viewController">
+                <viewController id="l4e-lk-fa4" customClass="LoginViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jjT-FI-3Yc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,6 +234,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Registro" id="zsY-uC-5dj"/>
+                    <connections>
+                        <outlet property="loginButton" destination="vIE-ew-NRO" id="ptn-AX-dcD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oS6-28-0qd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
