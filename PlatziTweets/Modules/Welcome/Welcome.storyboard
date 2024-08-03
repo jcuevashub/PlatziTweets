@@ -165,16 +165,25 @@
                         <outlet property="emailTextField" destination="pur-1S-UWu" id="Ash-Va-Cfo"/>
                         <outlet property="loginButton" destination="M8s-KQ-aSd" id="Zep-RS-tuK"/>
                         <outlet property="passwordTextField" destination="NWR-9X-rlL" id="Tj5-XP-czY"/>
+                        <segue destination="exW-9K-2vu" kind="presentation" identifier="showHome" modalPresentationStyle="fullScreen" id="fL0-uk-zdI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ov5-4Y-Xet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1742.7480916030534" y="-2.1126760563380285"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="aqn-57-Gtq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="exW-9K-2vu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L6K-aU-KJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2847" y="215"/>
+        </scene>
         <!--Registro-->
         <scene sceneID="e8U-Jx-2GV">
             <objects>
-                <viewController id="l4e-lk-fa4" customClass="LoginViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="l4e-lk-fa4" customClass="RegisterViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jjT-FI-3Yc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,6 +218,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="registerButtonAction" destination="l4e-lk-fa4" eventType="touchUpInside" id="kwg-4M-yhy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -235,12 +247,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="Registro" id="zsY-uC-5dj"/>
                     <connections>
-                        <outlet property="loginButton" destination="vIE-ew-NRO" id="ptn-AX-dcD"/>
+                        <outlet property="emailTextField" destination="hch-Tz-1B6" id="d6j-OT-83o"/>
+                        <outlet property="namesTextField" destination="7XX-kF-7aq" id="rbm-sU-hCW"/>
+                        <outlet property="passwordTextField" destination="Mpk-Ys-kZr" id="tFT-Cl-a0Q"/>
+                        <outlet property="registerButton" destination="vIE-ew-NRO" id="3I0-rh-YCn"/>
+                        <segue destination="exW-9K-2vu" kind="presentation" identifier="showHome" modalPresentationStyle="fullScreen" id="dqU-X4-Ewd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oS6-28-0qd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727" y="712"/>
+            <point key="canvasLocation" x="1743" y="725"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SPN-7r-mbR">
@@ -261,6 +277,9 @@
             <point key="canvasLocation" x="66.412213740458014" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dqU-X4-Ewd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="bottomImage" width="351.5" height="123"/>
         <image name="loginBg" width="640" height="425"/>
