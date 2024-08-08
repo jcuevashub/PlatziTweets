@@ -17,6 +17,17 @@
 		8BFF94182C5EDCD00059D12E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94172C5EDCD00059D12E /* LoginViewController.swift */; };
 		8BFF941A2C5EDCE10059D12E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94192C5EDCE10059D12E /* RegisterViewController.swift */; };
 		8BFF941D2C5EEA0F0059D12E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF941C2C5EEA0F0059D12E /* Home.storyboard */; };
+		8BFF941F2C5F119E0059D12E /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF941E2C5F119E0059D12E /* Endpoints.swift */; };
+		8BFF94212C5F13270059D12E /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94202C5F13270059D12E /* LoginRequest.swift */; };
+		8BFF94232C5F135A0059D12E /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94222C5F135A0059D12E /* LoginResponse.swift */; };
+		8BFF94262C5F13950059D12E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94252C5F13950059D12E /* User.swift */; };
+		8BFF942A2C5F15790059D12E /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94292C5F15790059D12E /* ErrorResponse.swift */; };
+		8BFF942C2C5F15A20059D12E /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF942B2C5F15A20059D12E /* GeneralResponse.swift */; };
+		8BFF942E2C5F15DF0059D12E /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF942D2C5F15DF0059D12E /* RegisterRequest.swift */; };
+		8BFF94302C5F16110059D12E /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF942F2C5F16110059D12E /* PostRequest.swift */; };
+		8BFF94322C5F164E0059D12E /* PostRequestLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94312C5F164E0059D12E /* PostRequestLocation.swift */; };
+		8BFF94342C5F16850059D12E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94332C5F16850059D12E /* Post.swift */; };
+		8BFF94362C5F16E90059D12E /* PostLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94352C5F16E90059D12E /* PostLocation.swift */; };
 		EDDB2C92AEA2878C8C1B1934 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C61A13FAE890D3C78597F1A /* Pods_PlatziTweets.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +44,17 @@
 		8BFF94172C5EDCD00059D12E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8BFF94192C5EDCE10059D12E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8BFF941C2C5EEA0F0059D12E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		8BFF941E2C5F119E0059D12E /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		8BFF94202C5F13270059D12E /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		8BFF94222C5F135A0059D12E /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		8BFF94252C5F13950059D12E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BFF94292C5F15790059D12E /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		8BFF942B2C5F15A20059D12E /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		8BFF942D2C5F15DF0059D12E /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		8BFF942F2C5F16110059D12E /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		8BFF94312C5F164E0059D12E /* PostRequestLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestLocation.swift; sourceTree = "<group>"; };
+		8BFF94332C5F16850059D12E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8BFF94352C5F16E90059D12E /* PostLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocation.swift; sourceTree = "<group>"; };
 		97E14E72534AB7B31C5D2147 /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
 		9C61A13FAE890D3C78597F1A /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E724E50A877C3BA13510F21B /* Pods-PlatziTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.release.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +93,7 @@
 		8BFF93FB2C5CA93F0059D12E /* PlatziTweets */ = {
 			isa = PBXGroup;
 			children = (
+				8BFF94242C5F137E0059D12E /* Models */,
 				8BFF94102C5CAE700059D12E /* Modules */,
 				8BFF94112C5CAE790059D12E /* Commons */,
 				8BFF940A2C5CA9410059D12E /* Info.plist */,
@@ -95,6 +118,7 @@
 				8BFF94002C5CA93F0059D12E /* ViewController.swift */,
 				8BFF94052C5CA9410059D12E /* Assets.xcassets */,
 				8BFF94072C5CA9410059D12E /* LaunchScreen.storyboard */,
+				8BFF941E2C5F119E0059D12E /* Endpoints.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -116,6 +140,39 @@
 				8BFF941C2C5EEA0F0059D12E /* Home.storyboard */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		8BFF94242C5F137E0059D12E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BFF94282C5F15540059D12E /* Requests */,
+				8BFF94272C5F154A0059D12E /* Responses */,
+				8BFF94252C5F13950059D12E /* User.swift */,
+				8BFF94332C5F16850059D12E /* Post.swift */,
+				8BFF94352C5F16E90059D12E /* PostLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BFF94272C5F154A0059D12E /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				8BFF94222C5F135A0059D12E /* LoginResponse.swift */,
+				8BFF94292C5F15790059D12E /* ErrorResponse.swift */,
+				8BFF942B2C5F15A20059D12E /* GeneralResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		8BFF94282C5F15540059D12E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				8BFF94202C5F13270059D12E /* LoginRequest.swift */,
+				8BFF942D2C5F15DF0059D12E /* RegisterRequest.swift */,
+				8BFF942F2C5F16110059D12E /* PostRequest.swift */,
+				8BFF94312C5F164E0059D12E /* PostRequestLocation.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		B030695BAE67DC04B6B07E23 /* Pods */ = {
@@ -251,12 +308,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BFF94362C5F16E90059D12E /* PostLocation.swift in Sources */,
 				8BFF94012C5CA93F0059D12E /* ViewController.swift in Sources */,
+				8BFF94302C5F16110059D12E /* PostRequest.swift in Sources */,
+				8BFF942C2C5F15A20059D12E /* GeneralResponse.swift in Sources */,
 				8BFF94162C5EDCB40059D12E /* WelcomeViewController.swift in Sources */,
+				8BFF94232C5F135A0059D12E /* LoginResponse.swift in Sources */,
 				8BFF93FD2C5CA93F0059D12E /* AppDelegate.swift in Sources */,
+				8BFF94322C5F164E0059D12E /* PostRequestLocation.swift in Sources */,
+				8BFF941F2C5F119E0059D12E /* Endpoints.swift in Sources */,
+				8BFF942E2C5F15DF0059D12E /* RegisterRequest.swift in Sources */,
 				8BFF941A2C5EDCE10059D12E /* RegisterViewController.swift in Sources */,
 				8BFF94182C5EDCD00059D12E /* LoginViewController.swift in Sources */,
+				8BFF94342C5F16850059D12E /* Post.swift in Sources */,
 				8BFF93FF2C5CA93F0059D12E /* SceneDelegate.swift in Sources */,
+				8BFF942A2C5F15790059D12E /* ErrorResponse.swift in Sources */,
+				8BFF94262C5F13950059D12E /* User.swift in Sources */,
+				8BFF94212C5F13270059D12E /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
