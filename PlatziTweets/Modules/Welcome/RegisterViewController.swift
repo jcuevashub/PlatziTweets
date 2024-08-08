@@ -7,6 +7,8 @@
 
 import UIKit
 import NotificationBannerSwift
+import Simple_Networking
+import SVProgressHUD
 
 class RegisterViewController: UIViewController {
     @IBOutlet weak var registerButton: UIButton!
@@ -46,7 +48,30 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        performSegue(withIdentifier: "showHome", sender: nil)
+        //Crear request
+        let request = RegisterRequest(email: email, password: password, names: names)
+        
+        // Indicar la carga a usuario
+        SVProgressHUD.show()
+        
+        // Llamar a la libreria de red
+        SN.post(endpoint: Endpoints.register, model: request) {(response: SNResultWithEntity<LoginResponse, ErrorResponse>) in
+            
+            // Cerrar la cargar de usuario
+            SVProgressHUD.dismiss()
+            
+            switch  response {
+            case .success(let user) :
+                self.performSegue(withIdentifier: "showHome", sender: nil)
+            case .error(let error):
+                NotificationBanner(subtitle: error.localizedDescription, style: .danger).show()
+                return
+            case .errorResult(let entity):
+                NotificationBanner(subtitle: entity.error, style: .danger).show()
+                return
+            }
+        }
+        
     }
 
 }
