@@ -46,7 +46,7 @@ class LoginViewController: UIViewController {
         }
         
         //Crear request
-        let request = LoginRequest(email: email, password: password)
+//        let request = LoginRequest(email: email, password: password)
         
         // Iniciamos la carga
         SVProgressHUD.show()
@@ -60,6 +60,7 @@ class LoginViewController: UIViewController {
             case .success(let user) :
                 NotificationBanner(subtitle: "Bienvenido \(user.user.names)", style: .success).show()
                 self.performSegue(withIdentifier: "showHome", sender: nil)
+                SimpleNetworking.setAuthenticationHeader(prefix: "", token: user.token)
             case .error(let error):
                 NotificationBanner(subtitle: error.localizedDescription, style: .danger).show()
                 return
@@ -68,7 +69,8 @@ class LoginViewController: UIViewController {
                 return
             }
         }
-        
+//        self.performSegue(withIdentifier: "showHome", sender: nil)
+
     }
 
 }
