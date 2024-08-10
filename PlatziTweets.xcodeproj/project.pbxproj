@@ -28,6 +28,9 @@
 		8BFF94322C5F164E0059D12E /* PostRequestLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94312C5F164E0059D12E /* PostRequestLocation.swift */; };
 		8BFF94342C5F16850059D12E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94332C5F16850059D12E /* Post.swift */; };
 		8BFF94362C5F16E90059D12E /* PostLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94352C5F16E90059D12E /* PostLocation.swift */; };
+		8BFF94382C66E6780059D12E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94372C66E6780059D12E /* HomeViewController.swift */; };
+		8BFF943C2C66E7B00059D12E /* TweetHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF943A2C66E7B00059D12E /* TweetHomeTableViewCell.swift */; };
+		8BFF943D2C66E7B00059D12E /* TweetHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF943B2C66E7B00059D12E /* TweetHomeTableViewCell.xib */; };
 		EDDB2C92AEA2878C8C1B1934 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C61A13FAE890D3C78597F1A /* Pods_PlatziTweets.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		8BFF94312C5F164E0059D12E /* PostRequestLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestLocation.swift; sourceTree = "<group>"; };
 		8BFF94332C5F16850059D12E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8BFF94352C5F16E90059D12E /* PostLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocation.swift; sourceTree = "<group>"; };
+		8BFF94372C66E6780059D12E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8BFF943A2C66E7B00059D12E /* TweetHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetHomeTableViewCell.swift; sourceTree = "<group>"; };
+		8BFF943B2C66E7B00059D12E /* TweetHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetHomeTableViewCell.xib; sourceTree = "<group>"; };
 		97E14E72534AB7B31C5D2147 /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
 		9C61A13FAE890D3C78597F1A /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E724E50A877C3BA13510F21B /* Pods-PlatziTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.release.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +143,9 @@
 		8BFF941B2C5EE9EE0059D12E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8BFF94392C66E7730059D12E /* Cells */,
 				8BFF941C2C5EEA0F0059D12E /* Home.storyboard */,
+				8BFF94372C66E6780059D12E /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -173,6 +181,15 @@
 				8BFF94312C5F164E0059D12E /* PostRequestLocation.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		8BFF94392C66E7730059D12E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8BFF943A2C66E7B00059D12E /* TweetHomeTableViewCell.swift */,
+				8BFF943B2C66E7B00059D12E /* TweetHomeTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		B030695BAE67DC04B6B07E23 /* Pods */ = {
@@ -252,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BFF943D2C66E7B00059D12E /* TweetHomeTableViewCell.xib in Resources */,
 				8BFF94062C5CA9410059D12E /* Assets.xcassets in Resources */,
 				8BFF94092C5CA9410059D12E /* Base in Resources */,
 				8BFF94142C5CAEE50059D12E /* Welcome.storyboard in Resources */,
@@ -313,6 +331,7 @@
 				8BFF94302C5F16110059D12E /* PostRequest.swift in Sources */,
 				8BFF942C2C5F15A20059D12E /* GeneralResponse.swift in Sources */,
 				8BFF94162C5EDCB40059D12E /* WelcomeViewController.swift in Sources */,
+				8BFF94382C66E6780059D12E /* HomeViewController.swift in Sources */,
 				8BFF94232C5F135A0059D12E /* LoginResponse.swift in Sources */,
 				8BFF93FD2C5CA93F0059D12E /* AppDelegate.swift in Sources */,
 				8BFF94322C5F164E0059D12E /* PostRequestLocation.swift in Sources */,
@@ -324,6 +343,7 @@
 				8BFF93FF2C5CA93F0059D12E /* SceneDelegate.swift in Sources */,
 				8BFF942A2C5F15790059D12E /* ErrorResponse.swift in Sources */,
 				8BFF94262C5F13950059D12E /* User.swift in Sources */,
+				8BFF943C2C66E7B00059D12E /* TweetHomeTableViewCell.swift in Sources */,
 				8BFF94212C5F13270059D12E /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
