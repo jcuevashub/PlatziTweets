@@ -26,7 +26,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="6Jx-SS-LMK" kind="presentation" id="oqn-dx-8aJ"/>
+                                    <segue destination="6Jx-SS-LMK" kind="presentation" modalPresentationStyle="fullScreen" id="oqn-dx-8aJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,7 +55,7 @@
             <objects>
                 <viewController id="6Jx-SS-LMK" customClass="AddPostViewController" customModule="PlatziTweets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dXq-2I-fUS">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuevo Tweet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxh-5V-d5l">
@@ -65,7 +65,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys0-0G-Doh">
-                                <rect key="frame" x="301.33333333333331" y="24.333333333333329" width="71.666666666666686" height="34.333333333333343"/>
+                                <rect key="frame" x="301.33333333333331" y="24.333333333333332" width="71.666666666666686" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Volver"/>
                                 <connections>
@@ -103,7 +103,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomImage" translatesAutoresizingMaskIntoConstraints="NO" id="6Fd-WS-uUn">
-                                <rect key="frame" x="0.0" y="717" width="393" height="125"/>
+                                <rect key="frame" x="0.0" y="727" width="393" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="Rj7-Z0-nPx"/>
                                 </constraints>

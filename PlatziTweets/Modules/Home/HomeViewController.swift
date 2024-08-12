@@ -23,6 +23,11 @@ class HomeViewController: UIViewController {
         setupUI()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //getPost()
+    }
+    
     private func setupUI() {
         // 1. Asginar datasource
         // 2. registar celda
