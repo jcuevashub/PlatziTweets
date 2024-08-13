@@ -32,6 +32,7 @@ class HomeViewController: UIViewController {
         // 1. Asginar datasource
         // 2. registar celda
         
+        tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: cellId, bundle: nil), forCellReuseIdentifier: cellId)
     }
@@ -54,6 +55,55 @@ class HomeViewController: UIViewController {
             }
             
         }
+    }
+    
+    private func deletePostAt(indexPath: IndexPath) {
+        // 1. Indicar carga al usuario
+        SVProgressHUD.show()
+        
+        // 2. Obtener ID del post que vamos a borrar
+        let postId = dataSource[indexPath.row].id
+        
+        // 3. Preparamos el endpoint para borrar
+        let endpoint = Endpoints.delete + postId
+        
+        // 4. Consumir el servicio para borrar el post
+        SN.delete(endpoint: endpoint) { (result: SNResultWithEntity<GeneralResponse, ErrorResponse>) in
+            //1. Indicar cargar al usuario
+            SVProgressHUD.show()
+            
+            switch  result {
+            case .success:
+                // 1. Borrar el post del datasource
+                self.dataSource.remove(at: indexPath.row)
+                
+                // 2. Borrar la celda de la table
+                self.tableView.deleteRows(at: [indexPath], with: .left)
+                
+            case .error(let error):
+                NotificationBanner(subtitle: error.localizedDescription, style: .danger).show()
+            case .errorResult(let entity):
+                NotificationBanner(subtitle: entity.error, style: .danger).show()
+            }
+        }
+    }
+}
+
+//MARK: - UITableViewDelegate
+extension HomeViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Borrar") {(_,_) in
+            // Aquí borramos el tweet
+            self.deletePostAt(indexPath: indexPath)
+        }
+        
+        return [deleteAction]
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return dataSource[indexPath.row].author.email != "test@test.com"
     }
 }
 
