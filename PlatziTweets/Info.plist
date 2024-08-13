@@ -21,5 +21,7 @@
 			</array>
 		</dict>
 	</dict>
+    <key>NSCameraUsageDescription</key>
+    <string>Usaremos la cámara para publicar tu Tweet.</string>
 </dict>
 </plist>
