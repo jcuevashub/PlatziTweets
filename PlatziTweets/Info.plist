@@ -23,5 +23,8 @@
 	</dict>
     <key>NSCameraUsageDescription</key>
     <string>Usaremos la cámara para publicar tu Tweet.</string>
+    
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Usaremos la microfono para grabar el video del tweet :)</string>
 </dict>
 </plist>
