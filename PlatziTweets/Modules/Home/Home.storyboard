@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qBl-dG-Cox">
-                                <rect key="frame" x="20" y="73.000000000000014" width="353" height="241.33333333333337"/>
+                                <rect key="frame" x="20" y="73" width="353" height="295.66666666666669"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UMi-Rz-Evt">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="120"/>
@@ -94,8 +94,16 @@
                                             <action selector="openCameraAction:" destination="6Jx-SS-LMK" eventType="touchUpInside" id="Nyb-1Z-QL2"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEZ-ET-igY">
+                                        <rect key="frame" x="0.0" y="194.33333333333331" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="video.fill" catalog="system" title="Ver video"/>
+                                        <connections>
+                                            <action selector="openPreviewAction" destination="6Jx-SS-LMK" eventType="touchUpInside" id="Ed8-Me-D3h"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a5-bP-jbO">
-                                        <rect key="frame" x="0.0" y="194.33333333333331" width="353" height="47"/>
+                                        <rect key="frame" x="0.0" y="248.66666666666669" width="353" height="47"/>
                                         <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="47" id="n9U-tk-BbL"/>
@@ -109,7 +117,7 @@
                                         </connections>
                                     </button>
                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rXB-cd-9hJ">
-                                        <rect key="frame" x="0.0" y="241.33333333333331" width="353" height="200"/>
+                                        <rect key="frame" x="0.0" y="295.66666666666669" width="353" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="Vdn-el-mc8"/>
                                         </constraints>
@@ -142,6 +150,7 @@
                     <connections>
                         <outlet property="postTextView" destination="UMi-Rz-Evt" id="sCy-zG-ByL"/>
                         <outlet property="previewImageView" destination="rXB-cd-9hJ" id="Fiu-Ok-jxL"/>
+                        <outlet property="videoButton" destination="bEZ-ET-igY" id="j4m-fx-lLf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPy-jI-RhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -169,6 +178,7 @@
     </scenes>
     <resources>
         <image name="bottomImage" width="351.5" height="123"/>
+        <image name="video.fill" catalog="system" width="128" height="81"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
