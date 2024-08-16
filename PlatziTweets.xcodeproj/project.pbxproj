@@ -33,6 +33,7 @@
 		8BFF943D2C66E7B00059D12E /* TweetHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF943B2C66E7B00059D12E /* TweetHomeTableViewCell.xib */; };
 		8BFF943F2C6A220E0059D12E /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF943E2C6A220E0059D12E /* AddPostViewController.swift */; };
 		8BFF94432C6AEFDC0059D12E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF94422C6AEFDC0059D12E /* GoogleService-Info.plist */; };
+		8BFF94452C6EE2230059D12E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF94442C6EE2230059D12E /* MapViewController.swift */; };
 		EDDB2C92AEA2878C8C1B1934 /* Pods_PlatziTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C61A13FAE890D3C78597F1A /* Pods_PlatziTweets.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		8BFF943B2C66E7B00059D12E /* TweetHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetHomeTableViewCell.xib; sourceTree = "<group>"; };
 		8BFF943E2C6A220E0059D12E /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		8BFF94422C6AEFDC0059D12E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8BFF94442C6EE2230059D12E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		97E14E72534AB7B31C5D2147 /* Pods-PlatziTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.debug.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.debug.xcconfig"; sourceTree = "<group>"; };
 		9C61A13FAE890D3C78597F1A /* Pods_PlatziTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatziTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E724E50A877C3BA13510F21B /* Pods-PlatziTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatziTweets.release.xcconfig"; path = "Target Support Files/Pods-PlatziTweets/Pods-PlatziTweets.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				8BFF941C2C5EEA0F0059D12E /* Home.storyboard */,
 				8BFF94372C66E6780059D12E /* HomeViewController.swift */,
 				8BFF943E2C6A220E0059D12E /* AddPostViewController.swift */,
+				8BFF94442C6EE2230059D12E /* MapViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				8BFF942E2C5F15DF0059D12E /* RegisterRequest.swift in Sources */,
 				8BFF941A2C5EDCE10059D12E /* RegisterViewController.swift in Sources */,
 				8BFF94182C5EDCD00059D12E /* LoginViewController.swift in Sources */,
+				8BFF94452C6EE2230059D12E /* MapViewController.swift in Sources */,
 				8BFF94342C5F16850059D12E /* Post.swift in Sources */,
 				8BFF93FF2C5CA93F0059D12E /* SceneDelegate.swift in Sources */,
 				8BFF942A2C5F15790059D12E /* ErrorResponse.swift in Sources */,
