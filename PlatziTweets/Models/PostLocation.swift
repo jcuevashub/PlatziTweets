@@ -9,5 +9,5 @@ import Foundation
 
 struct PostLocation: Codable {
     let latitude: Double
-    let longitued: Double
+    let longitude: Double
 }
